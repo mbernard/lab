@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30509.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzApp.Admin", "PizzApp.Admin\PizzApp.Admin.csproj", "{6711CD3C-486C-44AB-94F1-AFFEA69EDBCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzApp.Domain", "PizzApp.Domain\PizzApp.Domain.csproj", "{B1168731-60B7-4D00-9230-2C327E03B67A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzApp.Domain", "PizzApp.Domain\PizzApp.Domain.csproj", "{B1168731-60B7-4D00-9230-2C327E03B67A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{6128E3CA-E536-4859-86A2-96F699B0AF4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzApp.Admin.Clients.Blazor", "PizzApp.Admin.Clients.Blazor\PizzApp.Admin.Clients.Blazor.csproj", "{D914A7CA-D094-4EB0-9F0D-8E14A151E13E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{787F2195-90EF-4629-93FE-CC0CBD60EAB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzApp.Common", "PizzApp.Common\PizzApp.Common.csproj", "{1A2EDD4E-F338-42BB-B4FB-5D8E8702D5AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D388F30A-77D8-4D21-ADE7-1675D4CDC380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzApp.Domain.Tests.Unit", "PizzApp.Domain.Tests.Unit\PizzApp.Domain.Tests.Unit.csproj", "{55D18191-1025-4BA1-AC14-367D44C684EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +23,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6711CD3C-486C-44AB-94F1-AFFEA69EDBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6711CD3C-486C-44AB-94F1-AFFEA69EDBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6711CD3C-486C-44AB-94F1-AFFEA69EDBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6711CD3C-486C-44AB-94F1-AFFEA69EDBCD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B1168731-60B7-4D00-9230-2C327E03B67A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1168731-60B7-4D00-9230-2C327E03B67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1168731-60B7-4D00-9230-2C327E03B67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1168731-60B7-4D00-9230-2C327E03B67A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D914A7CA-D094-4EB0-9F0D-8E14A151E13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D914A7CA-D094-4EB0-9F0D-8E14A151E13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D914A7CA-D094-4EB0-9F0D-8E14A151E13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D914A7CA-D094-4EB0-9F0D-8E14A151E13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2EDD4E-F338-42BB-B4FB-5D8E8702D5AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2EDD4E-F338-42BB-B4FB-5D8E8702D5AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2EDD4E-F338-42BB-B4FB-5D8E8702D5AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2EDD4E-F338-42BB-B4FB-5D8E8702D5AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D18191-1025-4BA1-AC14-367D44C684EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D18191-1025-4BA1-AC14-367D44C684EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D18191-1025-4BA1-AC14-367D44C684EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D18191-1025-4BA1-AC14-367D44C684EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D914A7CA-D094-4EB0-9F0D-8E14A151E13E} = {6128E3CA-E536-4859-86A2-96F699B0AF4A}
+		{1A2EDD4E-F338-42BB-B4FB-5D8E8702D5AC} = {787F2195-90EF-4629-93FE-CC0CBD60EAB5}
+		{55D18191-1025-4BA1-AC14-367D44C684EB} = {D388F30A-77D8-4D21-ADE7-1675D4CDC380}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {021177AE-8E56-4BD3-94BE-FD2F222E2FB8}

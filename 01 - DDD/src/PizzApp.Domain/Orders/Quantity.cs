@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PizzApp.Domain
+namespace PizzApp.Domain.Orders
 {
-    class Product
+    public class Quantity
     {
     }
 }
